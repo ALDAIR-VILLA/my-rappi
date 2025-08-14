@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { supabase } from "./lib/SupabaseClient";
+import Image from "next/image";
 
 
 const SearchBar = () => {
@@ -54,7 +55,7 @@ const SearchBar = () => {
                 key={index}
                 className='flex items-center gap-4 p-3 border-b last:border-none hover:bg-red-100 cursor-pointer'
               >
-                <img
+                <Image
                   src={item.imagen}
                   alt={item.nombre}
                   width={50}

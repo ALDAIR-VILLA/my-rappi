@@ -4,6 +4,8 @@ import { useEffect, useState, useCallback } from 'react'
 import { supabase } from './lib/SupabaseClient'
 import useEmblaCarousel from 'embla-carousel-react'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
+
 
 export default function CarruselMenus() {
   const [menus, setMenus] = useState([])
@@ -69,7 +71,7 @@ export default function CarruselMenus() {
                 onClick={() => handleClickRestaurante(restaurante.id)}
               >
                 {restaurante.imagenUrl ? (
-                  <img
+                  <Image
                     src={restaurante.imagen}
                     alt={restaurante.nombre}
                     className="w-full h-48 object-cover"

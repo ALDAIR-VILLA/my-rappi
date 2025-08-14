@@ -1,5 +1,7 @@
 'use client'
 import { useCarrito } from '@/Context/CarritoContext'
+import Image from 'next/image'
+
 
 
 const CarritoCompras = () => {
@@ -41,7 +43,7 @@ const CarritoCompras = () => {
               ) : (
                 carrito.map((item) => (
                   <div key={item.id} className="flex gap-5 items-center ...">
-                    <img src={item.imagen} alt={item.nombre} height={50} width={50} className="..." />
+                    <Image src={item.imagen} alt={item.nombre} height={50} width={50} className="..." />
                     <div className="flex-1">
                       <h3 className='text-black'>{item.nombre}</h3>
                       <p className='text-black'>${item.precio}</p>

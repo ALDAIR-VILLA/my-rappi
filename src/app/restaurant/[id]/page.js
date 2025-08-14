@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { supabase } from '../../Componetes/lib/SupabaseClient'
 import { useCarrito } from '@/Context/CarritoContext'
+import Image from 'next/image'
 
 
 
@@ -61,7 +62,7 @@ export default function DetalleRestaurante() {
     >
       ⬅️
     </button>
-    <img
+    <Image
       src={restaurante.imagen}
       width={200}
       height={200}
@@ -85,7 +86,7 @@ export default function DetalleRestaurante() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl">
         {menus.map((menu) => (
           <div key={menu.id} className="bg-gray-50 p-4 rounded shadow flex flex-col items-center">
-            <img src={menu.imagen} alt={menu.nombre} className="mb-4 w-full h-48 object-cover rounded" />
+            <Image src={menu.imagen} alt={menu.nombre} className="mb-4 w-full h-48 object-cover rounded" />
             <h3 className="font-bold text-lg">{menu.nombre}</h3>
             <p className="text-2xl font-bold">${menu.precio}</p>
             <p>{menu.descripcion}</p>

@@ -1,14 +1,14 @@
 export default function AgregarRestaurante() {
     return (
         <div>
-            {/* PRIMER BLOQUE */}
+           
             <div className="flex justify-between items-start gap-12">
                 <div>
                     <h2 className="font-extrabold text-black mb-2">Top Marcas y Cadenas de Restaurantes</h2>
                     <ul className="space-y-1 text-black">
                         <li className="text-black cursor-pointer hover:underline">KFC</li>
                         <li className="text-black cursor-pointer hover:underline">Juan Valdez</li>
-                        <li className="text-black cursor-pointer hover:underline">Mc Donald's</li>
+                        <li className="text-black cursor-pointer hover:underline">Mc Donald&#39;s</li>
                         <li className="text-black cursor-pointer hover:underline">Frisby</li>
                         <li className="text-black cursor-pointer hover:underline">El Corral</li>
                         <li className="text-black cursor-pointer hover:underline">Perro Loco</li>

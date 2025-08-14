@@ -3,6 +3,8 @@
 import { useEffect, useState, useCallback } from 'react'
 import { supabase } from './lib/SupabaseClient'
 import useEmblaCarousel from 'embla-carousel-react'
+import Image from 'next/image'
+
 
 export default function CarruselMenus() {
   const [menus, setMenus] = useState([])
@@ -52,7 +54,7 @@ export default function CarruselMenus() {
             >
               <div className="bg-white rounded-xl shadow-lg overflow-hidden h-full">
                 {menu.imagenUrl ? (
-                  <img
+                  <Image
                     src={menu.imagen}
                     alt={menu.nombre}
                     className="w-full h-48 object-cover"
