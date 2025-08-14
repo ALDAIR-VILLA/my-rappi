@@ -9,7 +9,7 @@ import Textos from './Textos'
 
 const Inicio = () => {
   return (
-    <div className="flex flex-col items-center min-h-screen bg-white overflow-x-hidden px-4">
+    <div className="flex flex-col items-center min-h-screen bg-white overflow-x-hidden px-4  pt-24">
 
       <div className="mt-7 mb-4">
         <Image

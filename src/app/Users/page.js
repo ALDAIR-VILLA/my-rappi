@@ -10,7 +10,7 @@ export default function Users() {
 
   return (
     <div
-      className="min-h-screen bg-cover bg-center pt-20 bg-no-repeat"
+      className="min-h-screen bg-cover bg-center pt-28 bg-no-repeat"
       style={{ backgroundImage: "url('/FOTO-RAPPI.png')" }}
     >
          

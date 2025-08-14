@@ -36,7 +36,7 @@ const SearchBar = () => {
   }, [searchTerm]);
 
   return (
-    <div className='w-full max-w-lg mx-auto my-5'>
+    <div className='w-full max-w-lg mx-auto my-5 '>
       <input
         type='text'
         placeholder='Buscar restaurantes...'

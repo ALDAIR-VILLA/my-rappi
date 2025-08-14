@@ -57,7 +57,7 @@ export default function CarruselMenus() {
   if (menus.length === 0) return <p className="text-center">Cargando menús...</p>
 
   return (
-    <div className="p-4">
+    <div className="p-4 pt-24">
       <h1 className="text-black font-bold text-2xl">Top Restaurantes Más Visitados :</h1>
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex touch-pan-x gap-4">
