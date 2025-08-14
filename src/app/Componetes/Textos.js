@@ -8,7 +8,7 @@ export default function AgregarRestaurante() {
                     <ul className="space-y-1 text-black">
                         <li className="text-black cursor-pointer hover:underline">KFC</li>
                         <li className="text-black cursor-pointer hover:underline">Juan Valdez</li>
-                        <li className="text-black cursor-pointer hover:underline">Mc Donald&apos;s</li>
+                        <li className="text-black cursor-pointer hover:underline">Mc Donalds</li>
                         <li className="text-black cursor-pointer hover:underline">Frisby</li>
                         <li className="text-black cursor-pointer hover:underline">El Corral</li>
                         <li className="text-black cursor-pointer hover:underline">Perro Loco</li>
