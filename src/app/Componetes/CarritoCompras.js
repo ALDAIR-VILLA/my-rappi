@@ -63,12 +63,8 @@ const CarritoCompras = () => {
 
 
             {carrito.length > 0 && (
-              <div className="border-t p-6 flex gap-4">
-                 <input
-                        type="text"
-                        className=" bg-gray-100 text-black p-2  mb-2 rounded-3xl"
-                        placeholder="DIRECCION DE DOMICILIO"
-                      />
+              <div className="border-t p-6 flex flex-wrap gap-1">
+                
                 <p className='text-black' >Total: ${calcularTotal()}</p>
                 <p className='text-black'>({obtenerCantidadTotal()} productos)</p>
                 <button onClick={vaciarCarrito} className="bg-red-600 hover:bg-red-700 text-black font-semibold py-2 px-6 rounded-lg shadow-md transition duration-300 text-center">Vaciar carrito</button>
@@ -81,9 +77,15 @@ const CarritoCompras = () => {
                 >
                   Comprar ahora
                 </button>
+                 <input
+                        type="text"
+                        className=" bg-gray-100 text-black rounded-xs"
+                        placeholder="DIRECCION DE DOMICILIO"
+                      />
               </div>
             )}
           </div>
+          
         </div>
       )}
     </div>
