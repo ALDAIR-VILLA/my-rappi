@@ -47,8 +47,8 @@ export default function DetalleRestaurante() {
   
       {restaurante && (
         <>
-       <div className="w-full max-w-4xl px-4 mx-auto">
-  <div className="flex flex-col items-start">
+       <div className="w-full max-w-4xl px-4 mx-auto pt-24">
+  <div className="flex flex-col items-start ">
     <button
       onClick={() => router.back()}
       className="rounded hover:bg-red-600 text-2xl transition"
