@@ -66,7 +66,7 @@ const CarritoCompras = () => {
               <div className="border-t p-6 flex gap-4">
                  <input
                         type="text"
-                        className="w-full bg-gray-100 text-black p-2  mb-2 rounded-3xl"
+                        className=" bg-gray-100 text-black p-2  mb-2 rounded-3xl"
                         placeholder="DIRECCION DE DOMICILIO"
                       />
                 <p className='text-black' >Total: ${calcularTotal()}</p>
