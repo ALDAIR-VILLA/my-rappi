@@ -1,8 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['qwqajsppakjsdpwlpsor.supabase.co'], 
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'qwqajsppakjsdpwlpsor.supabase.co',
+        port: '',
+        pathname: '/storage/v1/object/public/**',
+      },
+    ],
   },
-}
+};
 
 export default nextConfig;
+
+
