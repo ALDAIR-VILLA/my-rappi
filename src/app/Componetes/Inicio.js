@@ -2,9 +2,9 @@ import Image from 'next/image'
 import React from 'react'
 import Foto from '../../../public/FOTO-RAPPI.png'
 import Link from 'next/link'
-import CarruselMenus from './CarruselMenus'
 import CarruselRestaurantes from './CarruselRestaurantes'
 import Textos from './Textos'
+import CarruselMenus from './CarruselMenus'
 
 
 const Inicio = () => {
@@ -13,11 +13,9 @@ const Inicio = () => {
 
       <div className="mt-7 mb-4">
         <Image
-          className="animate-pulse"
+          className="animate-pulse w-3xs h-28"
           src={Foto}
           alt="FOTO"
-          width={400}
-          height={300}
         />
       </div>
 
@@ -25,7 +23,7 @@ const Inicio = () => {
 
        
         <div className="w-full">
-          <CarruselMenus />
+          <CarruselMenus/>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4">

@@ -74,7 +74,9 @@ export default function CarruselMenus() {
                   <Image
                     src={restaurante.imagen}
                     alt={restaurante.nombre}
-                    className="w-full h-48 object-cover"
+                    width={300}
+                    height={200}
+                    className=" w-full h-48 object-cover"
                   />
                 ) : (
                   <div className="w-full h-48 bg-gray-200 flex items-center justify-center">

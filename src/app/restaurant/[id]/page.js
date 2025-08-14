@@ -14,10 +14,10 @@ export default function DetalleRestaurante() {
   const { id } = useParams()
   const [menus, setMenus] = useState([])
   const [restaurante, setRestaurante] = useState(null)
-  const { agregarAlCarrito } = useCarrito()
+  const { agregarAlCarrito } = useCarrito() 
 
   const [mensaje, setMensaje] = useState(null)
-  const handleLogout = async () => {
+    const handleLogout = async () => {
     await supabase.auth.signOut()
     router.push('/Users')
   }
@@ -50,29 +50,28 @@ export default function DetalleRestaurante() {
 
   return (
     <div className="p-6 bg-white text-black min-h-screen flex flex-col items-center pt-28">
-
-
+     
+  
       {restaurante && (
         <>
-          <div className="w-full max-w-4xl px-4 mx-auto">
-            <div className="flex flex-col items-start">
-              <button
-                onClick={handleLogout}
-                className="fixed top-4 left-4 bg-white border border-gray-300 rounded-full p-2 shadow hover:bg-red-600 hover:text-white text-lg z-50"
-              >
-                ⬅️
-              </button>
-
-              <Image
-                src={restaurante.imagen}
-                width={200}
-                height={200}
-                alt={restaurante.nombre}
-                className="mb-4 rounded"
-              />
-              <h1 className="text-3xl font-bold mb-4">{restaurante.nombre}</h1>
-            </div>
-          </div>
+       <div className="w-full max-w-4xl px-4 mx-auto">
+  <div className="flex flex-col items-start">
+    <button
+      onClick={handleLogout}
+      className="rounded hover:bg-red-600 text-2xl transition"
+    >
+      ⬅️
+    </button>
+    <Image
+      src={restaurante.imagen}
+      width={200}
+      height={200}
+      alt={restaurante.nombre}
+      className="mb-4 rounded"
+    />
+    <h1 className="text-3xl font-bold mb-4">{restaurante.nombre}</h1>
+  </div>
+</div>    
         </>
       )}
 
@@ -87,13 +86,13 @@ export default function DetalleRestaurante() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl">
         {menus.map((menu) => (
           <div key={menu.id} className="bg-gray-50 p-4 rounded shadow flex flex-col items-center">
-            <Image src={menu.imagen} alt={menu.nombre} className="mb-4 w-full h-48 object-cover rounded" />
+            <Image src={menu.imagen} alt={menu.nombre} width={300} height={200} className="mb-4 w-full h-48 object-cover rounded" />
             <h3 className="font-bold text-lg">{menu.nombre}</h3>
             <p className="text-2xl font-bold">${menu.precio}</p>
             <p>{menu.descripcion}</p>
-            <button onClick={() => handleAgregar(menu)} className="bg-red-600 text-white p-2">
-              Agregar al carrito
-            </button>
+             <button onClick={() => handleAgregar(menu)} className="bg-red-600 text-white p-2">
+            Agregar al carrito
+          </button>
           </div>
         ))}
       </div>
