@@ -24,8 +24,8 @@ export default function AgregarRestaurante() {
                         <li className="text-black cursor-pointer hover:underline">Chile</li>
                         <li className="text-black cursor-pointer hover:underline">Costa Rica</li>
                         <li className="text-black cursor-pointer hover:underline">Ecuador</li>
-                        <li className="text-black cursor-pointer hover:underline">México</li>
-                        <li className="text-black cursor-pointer hover:underline">Perú</li>
+                        <li className="text-black cursor-pointer hover:underline">Mexico</li>
+                        <li className="text-black cursor-pointer hover:underline">Peru</li>
                         <li className="text-black cursor-pointer hover:underline">Uruguay</li>
                     </ul>
                 </div>
@@ -50,9 +50,9 @@ export default function AgregarRestaurante() {
            
             <div className="flex justify-between items-start gap-12 mt-10">
                 <div>
-                    <h2 className="font-extrabold text-black mb-2">Categorías</h2>
+                    <h2 className="font-extrabold text-black mb-2">Categorias</h2>
                     <ul className="space-y-1 ">
-                        <li className="text-black cursor-pointer hover:underline">Catálogo Productos</li>
+                        <li className="text-black cursor-pointer hover:underline">Catalogo Productos</li>
                         <li className="text-black cursor-pointer hover:underline">Restaurantes</li>
                         <li className="text-black cursor-pointer hover:underline">Tiendas cerca de mi</li>
                         <li className="text-black cursor-pointer hover:underline">Promociones y Ofertas</li>
@@ -61,7 +61,7 @@ export default function AgregarRestaurante() {
                     </ul>
                 </div>
                 <div>
-                    <h2 className="font-extrabold text-black mb-2" >Únete a Rappi</h2>
+                    <h2 className="font-extrabold text-black mb-2" >Unete a Rappi</h2>
                     <ul className="space-y-1 text-black">
                         <li className="text-black cursor-pointer hover:underline">Registra tu restaurante</li>
                         <li className="text-black cursor-pointer hover:underline">Trabaja con nosotros</li>
@@ -83,8 +83,8 @@ export default function AgregarRestaurante() {
                         <li> Tratamiento de Datos</li>
                         <li>Informacion Relevante</li>
                         <li>Derecho de retracto</li>
-                        <li>Términos y Condiciones</li>
-                        <li>Políticas de Privacidad</li>
+                        <li>Terminos y Condiciones</li>
+                        <li>Politicas de Privacidad</li>
                         <li>PQRs</li>
                     </ul>
                 </div>
