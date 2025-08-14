@@ -75,7 +75,7 @@ export default function CarruselMenus() {
                     src={restaurante.imagen}
                     alt={restaurante.nombre}
                     width={300}
-                    height={200}
+                    height={300}
                     className=" w-full h-48 object-cover"
                   />
                 ) : (

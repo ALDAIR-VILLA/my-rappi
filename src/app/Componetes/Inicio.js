@@ -16,6 +16,8 @@ const Inicio = () => {
           className="animate-pulse w-3xs h-28"
           src={Foto}
           alt="FOTO"
+          width={300}
+          height={300}
         />
       </div>
 

@@ -58,7 +58,7 @@ export default function CarruselMenus() {
                     src={menu.imagen}
                     alt={menu.nombre}
                     width={300}
-                    height={200}
+                    height={300}
                     className=" w-full h-48 object-cover"
                   />
                 ) : (

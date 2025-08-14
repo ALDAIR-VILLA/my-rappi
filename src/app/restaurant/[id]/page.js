@@ -5,10 +5,6 @@ import { supabase } from '../../Componetes/lib/SupabaseClient'
 import { useCarrito } from '@/Context/CarritoContext'
 import Image from 'next/image'
 
-
-
-
-
 export default function DetalleRestaurante() {
   const router = useRouter()
   const { id } = useParams()
@@ -17,10 +13,7 @@ export default function DetalleRestaurante() {
   const { agregarAlCarrito } = useCarrito() 
 
   const [mensaje, setMensaje] = useState(null)
-    const handleLogout = async () => {
-    await supabase.auth.signOut()
-    router.push('/Users')
-  }
+   
 
   useEffect(() => {
     const fetchData = async () => {
@@ -57,7 +50,7 @@ export default function DetalleRestaurante() {
        <div className="w-full max-w-4xl px-4 mx-auto">
   <div className="flex flex-col items-start">
     <button
-      onClick={handleLogout}
+      onClick={() => router.back()}
       className="rounded hover:bg-red-600 text-2xl transition"
     >
       ⬅️
@@ -86,7 +79,7 @@ export default function DetalleRestaurante() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl">
         {menus.map((menu) => (
           <div key={menu.id} className="bg-gray-50 p-4 rounded shadow flex flex-col items-center">
-            <Image src={menu.imagen} alt={menu.nombre} width={300} height={200} className="mb-4 w-full h-48 object-cover rounded" />
+            <Image src={menu.imagen} alt={menu.nombre} width={300} height={300} className="mb-4 w-full h-48 object-cover rounded" />
             <h3 className="font-bold text-lg">{menu.nombre}</h3>
             <p className="text-2xl font-bold">${menu.precio}</p>
             <p>{menu.descripcion}</p>
